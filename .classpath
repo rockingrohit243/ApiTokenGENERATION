@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="function porogramming/src"/>
+	<classpathentry kind="src" path="h2/jpatoh2/src/main/java"/>
+	<classpathentry kind="src" path="h2/jpatoh2/src/test/java"/>
+	<classpathentry kind="src" path="restful-web-services/src/main/java"/>
+	<classpathentry kind="src" path="restful-web-services/src/main/resources"/>
+	<classpathentry kind="src" path="restful-web-services/src/test/java"/>
+	<classpathentry kind="lib" path="h2/jpatoh2/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="restful-web-services/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="function porogramming/out/production/function porogramming"/>
+</classpath>
