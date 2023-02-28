@@ -1,2 +1,4 @@
-package javabankproject;public class Database {
+package javabankproject;
+
+public class Database {
 }

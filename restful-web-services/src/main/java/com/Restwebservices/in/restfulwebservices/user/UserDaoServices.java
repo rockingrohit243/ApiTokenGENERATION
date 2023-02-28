@@ -32,6 +32,7 @@ public User findOne(int id) {
 }
 public User save(User user) {
 	user.setId(++userCount);
+	userCount=userCount++;
 	users.add(user);
 	return user;
 	

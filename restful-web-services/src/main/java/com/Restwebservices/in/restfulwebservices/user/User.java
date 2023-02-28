@@ -2,6 +2,8 @@ package com.Restwebservices.in.restfulwebservices.user;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,8 +13,12 @@ import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 @Entity(name="user_Details")  //user is a keyword in h2 so changing the table
+@JsonIgnoreProperties({"id"})
 public class User {
-	@JsonProperty("JSON_ID") //   RENAMING THE FIELD IN TD
+	//@JsonIgnore// to ignore the properties  in the json
+	@JsonProperty("JSON_ID")
+	@Id
+	@GeneratedValue//   RENAMING THE FIELD IN TD
 	private Integer id;
 	
 	@Size(min=5,max=15,message="birthdate should be in te past")
@@ -32,8 +38,8 @@ public class User {
 		
 	}
 	
-	@Id
-	@GeneratedValue
+
+
 	public Integer getId() {
 		return id;
 	}

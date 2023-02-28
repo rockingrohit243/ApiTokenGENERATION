@@ -1,2 +1,4 @@
-package javabankproject;public class Bankfunction {
+package javabankproject;
+
+public class Bankfunction extends Database{
 }
